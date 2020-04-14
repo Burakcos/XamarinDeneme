@@ -16,6 +16,23 @@ namespace App1
         public MainPage()
         {
             InitializeComponent();
+            slider.Value = 0.5;
+          
+        }
+
+        int count = 0;
+        void Handle_Click(object sender,EventArgs e)
+        {
+            count++;
+            var btn = (Button)sender;
+            btn.Text = $"butona {count} kez tıklandı.";
+
+        }
+
+        void Handle_Slider(object sender,Xamarin.Forms.ValueChangedEventArgs e)
+        {
+            label.Text = String.Format("Value is {0:F2}", e.NewValue);
+
         }
     }
 }
