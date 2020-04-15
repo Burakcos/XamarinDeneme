@@ -4,12 +4,20 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="App1.MainPage">
+             x:Class="App1.MainPage" >
 
-    <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
-        <Label Text="Welcome to Xamarin.Forms!" x:Name="label" />
-        <Button Text="Click Me" Clicked="Handle_Click"/>
-        <Slider ValueChanged="Handle_Slider" x:Name="slider"/>
+    <StackLayout  HorizontalOptions="Center" VerticalOptions="Center" >
+        <Label  x:Name="label1" FontSize="Title"  HorizontalTextAlignment="Center" Padding="0,0,0,20"/>
+        <Label  x:Name="label2" FontSize="Large" HorizontalTextAlignment="Center" Padding="0,0,0,30"/>
+
+
+        <StackLayout Orientation="Horizontal"  VerticalOptions="Center"  >
+            <Button x:Name="Button1" HorizontalOptions="FillAndExpand" />
+            <Button x:Name="Button2" HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+    
+        <!--<Button Text="Click Me" Clicked="Handle_Click"/>-->
+        <!--<Slider ValueChanged="Handle_Slider" x:Name="slider"/>-->
 
     </StackLayout>
 
