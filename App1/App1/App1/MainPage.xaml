@@ -6,12 +6,12 @@
              mc:Ignorable="d"
              x:Class="App1.MainPage" >
 
-    <StackLayout  HorizontalOptions="Center" VerticalOptions="Center" >
-        <Label  x:Name="label1" FontSize="Title"  HorizontalTextAlignment="Center" Padding="0,0,0,20"/>
-        <Label  x:Name="label2" FontSize="Large" HorizontalTextAlignment="Center" Padding="0,0,0,30"/>
+    <StackLayout  Spacing="20" VerticalOptions="Center" >
+        <Label  x:Name="label1" FontSize="32" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+        <Label  x:Name="label2" FontSize="Large" HorizontalTextAlignment="Center" />
 
 
-        <StackLayout Orientation="Horizontal"  VerticalOptions="Center"  >
+        <StackLayout Orientation="Horizontal"  Padding="15" >
             <Button x:Name="Button1" HorizontalOptions="FillAndExpand" />
             <Button x:Name="Button2" HorizontalOptions="FillAndExpand" />
         </StackLayout>
